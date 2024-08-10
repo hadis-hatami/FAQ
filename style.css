@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(
+    to bottom,
+    rgb(199, 235, 246),
+    rgb(94, 200, 233),
+    rgb(226, 146, 212)
+  );
+}
+
+.hadear-menu {
+  margin: 0 0;
+  padding: 20px;
+}
+.hadear-menu ul {
+  display: flex;
+  justify-content: right;
+  list-style: none;
+}
+.hadear-menu ul li a {
+  color: rgb(143, 9, 238);
+  margin: 20px;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 1em;
+  display: 0.7;
+  transition: 0.5s;
+}
+.hadear-menu ul li a:hover {
+  opacity: 1;
+}
+.header-link:hover {
+  color: rgb(255, 0, 0);
+  transition: 0.5s;
+}
+
+#box {
+  max-width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 40px 0px;
+}
+#box li {
+  list-style: none;
+  margin: 1.5rem 0;
+  margin-bottom: 10px;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  border: 2px solid pink;
+}
+
+#box li label {
+  cursor: pointer;
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: bold;
+  width: 100%;
+  color: blueviolet;
+  outline: none;
+  position: relative;
+}
+#box li label spen {
+  transform: rotate(90deg);
+  font-size: 18px;
+  color: blueviolet;
+}
+#box label:hover {
+  background-color: rgb(239, 231, 232);
+}
+#box label + input[type="radio"] {
+  display: none;
+}
+#box .content {
+  line-height: 1.4;
+  padding: 0 10px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-hight 0.5s;
+}
+#box label + input[type="radio"]:checked + .content {
+  max-height: 400px;
+  transition: all 3s ease;
+}
+.footer {
+  padding: 10px;
+}
+.social {
+  display: flex;
+  justify-content: center;
+}
+.social a {
+  text-decoration: none;
+  padding: 5px;
+  margin: 8px;
+  background-color: rgb(75, 186, 245);
+  border-radius: 50px;
+}
+.social a i {
+  font-size: 1.5em;
+  color: rgb(255, 255, 255);
+  opacity: 0.9;
+}
+.social a:hover {
+  background-color: rgb(230, 121, 197);
+  transition: 0.5s;
+}
+.social a:hover i {
+  color: white;
+  transition: 0.5s;
+}
+
+@media screen and (min-width: 700px) {
+  .hadear-menu {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 0px;
+  }
+  #box {
+    max-width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 40px 0px;
+  }
+}
